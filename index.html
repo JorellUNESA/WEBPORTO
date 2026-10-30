@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jorell Ozora Jizraele - Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        darkbg: '#0a0a0a',
+                        cardbg: '#141414',
+                        cardhover: '#1f1f1f',
+                        bordercolor: '#262626'
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-darkbg text-white font-sans antialiased selection:bg-white selection:text-black">
+
+    <!-- Floating Navbar (Sesuai contoh Guidebook) -->
+    <header class="fixed top-4 inset-x-0 max-w-2xl mx-auto px-4 z-50">
+        <nav class="flex items-center justify-between bg-cardbg/80 backdrop-blur-md border border-bordercolor px-4 py-2.5 rounded-full shadow-2xl">
+            <a href="#" class="font-bold tracking-wider text-sm bg-white text-black px-3 py-1 rounded-full">JORELL</a>
+            <div class="hidden md:flex items-center space-x-6 text-sm text-neutral-400 font-medium">
+                <a href="#work" class="hover:text-white transition">Work</a>
+                <a href="#capabilities" class="hover:text-white transition">What I Can Do</a>
+                <a href="#about" class="hover:text-white transition">About</a>
+            </div>
+            <div class="flex items-center space-x-3">
+                <button aria-label="Toggle Dark Mode" class="p-2 rounded-full hover:bg-neutral-800 text-neutral-400 hover:text-white transition">
+                    <i data-lucide="moon" class="w-4 h-4"></i>
+                </button>
+                <a href="#contact" class="bg-white text-black text-xs font-semibold px-4 py-2 rounded-full hover:bg-neutral-200 transition">Hire Me</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Container -->
+    <main class="max-w-4xl mx-auto px-6 pt-32 pb-20 space-y-32">
+
+        <!-- Hero Section -->
+        <section class="flex flex-col md:flex-row items-center justify-between gap-10 pt-10">
+            <div class="space-y-6 flex-1 text-center md:text-left">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-neutral-900 border border-bordercolor text-xs text-neutral-400">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> Available for new projects
+                </div>
+                <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight">
+                    Jorell Ozora Jizraele
+                </h1>
+                <p class="text-neutral-400 text-base md:text-lg max-w-xl">
+                    Mahasiswa Sistem Informasi Universitas Negeri Surabaya yang berfokus pada pengembangan web, analisis sistem perusahaan, dan pemecahan masalah digital.
+                </p>
+                <div class="flex flex-wrap gap-4 justify-center md:justify-start">
+                    <a href="#work" class="bg-white text-black font-medium px-6 py-3 rounded-xl text-sm hover:bg-neutral-200 transition shadow-lg">Lihat Proyek</a>
+                    <a href="#contact" class="border border-bordercolor hover:border-neutral-500 font-medium px-6 py-3 rounded-xl text-sm transition">Hubungi Saya</a>
+                </div>
+            </div>
+            <div class="relative group">
+                <div class="w-48 h-48 md:w-60 md:h-60 rounded-2xl bg-neutral-900 border border-bordercolor overflow-hidden flex items-center justify-center shadow-2xl">
+                    <!-- Ganti path gambar sesuai foto Anda -->
+                    <i data-lucide="user" class="w-20 h-20 text-neutral-600"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work Gallery / Achievement Section -->
+        <section id="work" class="space-y-8">
+            <div>
+                <p class="text-xs font-semibold text-neutral-500 uppercase tracking-widest mb-2">SELECTED WORK</p>
+                <h2 class="text-3xl font-bold tracking-tight">Work Gallery & Achievements</h2>
+                <p class="text-neutral-400 text-sm mt-1">Kumpulan proyek sistem, digital, dan pencapaian akademik yang pernah dibangun.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Project 1 -->
+                <div class="bg-cardbg border border-bordercolor rounded-2xl p-6 hover:border-neutral-700 transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="text-xs font-mono bg-neutral-900 border border-bordercolor px-2.5 py-1 rounded-md text-neutral-400">Web Development</span>
+                            <span class="text-xs text-neutral-500">2026</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Jorel Vault (Personal Website)</h3>
+                        <p class="text-neutral-400 text-sm mb-4">Website portofolio pribadi interaktif yang dibangun menggunakan HTML, Bootstrap 5, dan kustomisasi gaya modern.</p>
+                    </div>
+                    <a href="#" class="text-xs font-medium text-white inline-flex items-center gap-1 hover:underline">Lihat Detail &rarr;</a>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-cardbg border border-bordercolor rounded-2xl p-6 hover:border-neutral-700 transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="text-xs font-mono bg-neutral-900 border border-bordercolor px-2.5 py-1 rounded-md text-neutral-400">Enterprise Systems</span>
+                            <span class="text-xs text-neutral-500">2026</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Analisis EIS PT Telkom Indonesia</h3>
+                        <p class="text-neutral-400 text-sm mb-4">Analisis Enterprise Information Systems (EIS) dan executive dashboards untuk studi kasus korporasi (Kelompok 2).</p>
+                    </div>
+                    <a href="#" class="text-xs font-medium text-white inline-flex items-center gap-1 hover:underline">Lihat Detail &rarr;</a>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="bg-cardbg border border-bordercolor rounded-2xl p-6 hover:border-neutral-700 transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="text-xs font-mono bg-neutral-900 border border-bordercolor px-2.5 py-1 rounded-md text-neutral-400">Infographic Competition</span>
+                            <span class="text-xs text-neutral-500">2026</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">EUNOIA Challenge Submission</h3>
+                        <p class="text-neutral-400 text-sm mb-4">Pembuatan infografis bertajuk "EMPOWERING TOMORROW: How Youth Leaders are Fixing the Global Education Crisis".</p>
+                    </div>
+                    <a href="#" class="text-xs font-medium text-white inline-flex items-center gap-1 hover:underline">Lihat Detail &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- What I Can Do Section -->
+        <section id="capabilities" class="space-y-8">
+            <div>
+                <p class="text-xs font-semibold text-neutral-500 uppercase tracking-widest mb-2">MY CAPABILITIES</p>
+                <h2 class="text-3xl font-bold tracking-tight">What I Can Do</h2>
+                <p class="text-neutral-400 text-sm mt-1">Menggabungkan pemecahan masalah teknis dan keterampilan digital untuk membangun sistem yang handal.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-cardbg border border-bordercolor rounded-2xl p-6 space-y-4">
+                    <div class="w-10 h-10 rounded-xl bg-neutral-900 border border-bordercolor flex items-center justify-center">
+                        <i data-lucide="code" class="w-5 h-5 text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold">Web & Digital Development</h3>
+                    <p class="text-neutral-400 text-sm">Membangun dan merancang halaman web yang interaktif, responsif, serta terstruktur dengan baik menggunakan standar industri terkini.</p>
+                    <div class="flex flex-wrap gap-2 pt-2">
+                        <span class="text-xs bg-neutral-900 border border-bordercolor px-3 py-1 rounded-full text-neutral-300">HTML5</span>
+                        <span class="text-xs bg-neutral-900 border border-bordercolor px-3 py-1 rounded-full text-neutral-300">CSS3 / Tailwind</span>
+                        <span class="text-xs bg-neutral-900 border border-bordercolor px-3 py-1 rounded-full text-neutral-300">JavaScript</span>
+                        <span class="text-xs bg-neutral-900 border border-bordercolor px-3 py-1 rounded-full text-neutral-300">VS Code</span>
+                    </div>
+                </div>
+
+                <div class="bg-cardbg border border-bordercolor rounded-2xl p-6 space-y-4">
+                    <div class="w-10 h-10 rounded-xl bg-neutral-900 border border-bordercolor flex items-center justify-center">
+                        <i data-lucide="database" class="w-5 h-5 text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold">Systems & Data Analysis</h3>
+                    <p class="text-neutral-400 text-sm">Mendukung analisis sistem informasi perusahaan, pengelolaan alur kerja digital, serta dokumentasi riset yang sistematis.</p>
+                    <div class="flex flex-wrap gap-2 pt-2">
+                        <span class="text-xs bg-neutral-900 border border-bordercolor px-3 py-1 rounded-full text-neutral-300">Enterprise Systems</span>
+                        <span class="text-xs bg-neutral-900 border border-bordercolor px-3 py-1 rounded-full text-neutral-300">WSL & PowerShell</span>
+                        <span class="text-xs bg-neutral-900 border border-bordercolor px-3 py-1 rounded-full text-neutral-300">Git / GitHub</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="space-y-8">
+            <div>
+                <p class="text-xs font-semibold text-neutral-500 uppercase tracking-widest mb-2">ABOUT ME</p>
+                <h2 class="text-3xl font-bold tracking-tight">Problem Solver. Digital Generalist.</h2>
+            </div>
+
+            <div class="bg-cardbg border border-bordercolor rounded-2xl p-8 space-y-6">
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-6 pb-6 border-b border-bordercolor text-center md:text-left">
+                    <div>
+                        <p class="text-2xl font-bold text-white">Jorell Ozora Jizraele</p>
+                        <p class="text-xs text-neutral-500 mt-1">Nama Lengkap</p>
+                    </div>
+                    <div>
+                        <p class="text-2xl font-bold text-white">Sistem Informasi</p>
+                        <p class="text-xs text-neutral-500 mt-1">Program Studi (UNESA)</p>
+                    </div>
+                    <div>
+                        <p class="text-2xl font-bold text-white">2026</p>
+                        <p class="text-xs text-neutral-500 mt-1">Angkatan / Tahun</p>
+                    </div>
+                </div>
+
+                <p class="text-neutral-300 text-sm md:text-base leading-relaxed">
+                    Saya adalah mahasiswa Program Studi Sistem Informasi di Fakultas Teknik, Universitas Negeri Surabaya (UNESA). Berasal dari Bogor dan kini berkuliah di Surabaya. Saya memiliki minat besar dalam pengembangan web, pengelolaan sistem informasi perusahaan, serta aktif mengeksplorasi teknologi baru melalui kompetisi dan proyek akademik.
+                </p>
+
+                <div class="pt-2">
+                    <a href="#" class="inline-flex items-center gap-2 text-sm font-semibold bg-white text-black px-5 py-2.5 rounded-xl hover:bg-neutral-200 transition">
+                        <i data-lucide="download" class="w-4 h-4"></i> Download Resume / CV
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="space-y-8">
+            <div class="bg-cardbg border border-bordercolor rounded-3xl p-8 md:p-12 flex flex-col md:flex-row justify-between gap-10">
+                <div class="space-y-4 flex-1">
+                    <p class="text-xs font-semibold text-neutral-500 uppercase tracking-widest">GET IN TOUCH</p>
+                    <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight">Let's Work Together</h2>
+                    <p class="text-neutral-400 text-sm">
+                        Terbuka untuk kolaborasi, diskusi proyek teknologi, atau peluang magang di bidang sistem informasi dan web development.
+                    </p>
+                    <div class="pt-4 space-y-2 text-sm text-neutral-300 font-mono">
+                        <p class="flex items-center gap-2"><i data-lucide="mail" class="w-4 h-4 text-neutral-500"></i> ozorajorel008@gmail.com</p>
+                        <p class="flex items-center gap-2"><i data-lucide="github" class="w-4 h-4 text-neutral-500"></i> https://github.com/JorellUNESA</p>
+                        <p class="flex items-center gap-2"><i data-lucide="linkedin" class="w-4 h-4 text-neutral-500"></i> https://www.linkedin.com/in/jorel-ozora-9a3101441</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col justify-center">
+                    <a href="mailto:ozorajorel008@gmail.com" class="bg-white text-black text-center font-semibold px-8 py-4 rounded-2xl hover:bg-neutral-200 transition shadow-xl">
+                        Send Me A Message
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="max-w-4xl mx-auto px-6 py-8 border-t border-bordercolor text-center text-xs text-neutral-500">
+        &copy; 2026 Jorell Ozora Jizraele. All rights reserved.
+    </footer>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
